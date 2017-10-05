@@ -9,7 +9,7 @@ import Create from './components/Create.js';
 
 export default(
     <Switch>
-      <Route component={ Home } path="/" exact/>
+      <Route component={ Home } path="/" exact />
       <Route component={ Shelf } path="/shelf/:id" />
       <Route component={ Bin } path="/bin/:id2" />
       <Route component={ Create } path="/create/:id2" />
