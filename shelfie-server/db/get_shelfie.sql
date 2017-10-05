@@ -1,2 +1,2 @@
 SELECT * FROM shelfie
-WHERE id=${id};
+WHERE shelf=${id};
