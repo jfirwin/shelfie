@@ -12,7 +12,9 @@ massive( process.env.CONNECTION_STRING ).then( dbInstance => {
   app.set('db', dbInstance)
 });
 
-app.get( '/api/shelfie', controller.get_shelfie );
+app.get( `/api/shelfie`, controller.get_shelfie );
+app.post( `/api/shelfie/:id`, controller.add_bin );
+app.get( `/api/shelfie/:id`, controller.get_shelfie );
 
 const port = process.env.PORT || 3001;
 app.listen( port, () => { console.log(`Server listening on port ${port}.`); } );

@@ -6,7 +6,7 @@ module.exports = {
       .catch(error => console.log(error))
   },
 
-  addBin: (req, res, next) => {
+  add_bin: (req, res, next) => {
     const dbInstance = req.app.get('db');
     const { id } = req.params;
     dbInstance.add_bin({ id })
@@ -14,7 +14,7 @@ module.exports = {
       .catch(error => console.log(error))
   },
 
-  updateBin: (req, res, next) => {
+  update_bin: (req, res, next) => {
     const dbInstance = req.app.get('db');
     const { id } = req.params;
     dbInstance.update_bin({ id })
