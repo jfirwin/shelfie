@@ -1,0 +1,24 @@
+nav {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ab2a19;
+  color: #fff;
+  padding: 20px;
+}
+
+nav img {
+  width: 50px;
+}
+
+nav h1 {
+  padding-left: 10px;
+  font-size: 35px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #fff;
+}
