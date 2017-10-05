@@ -1,7 +1,8 @@
 module.exports = {
   get_shelfie: (req, res, next) => {
     const dbInstance = req.app.get('db');
-    dbInstance.get_shelfie()
+    const { id } = req.params;
+    dbInstance.get_shelfie({ id })
       .then(shelfie => res.status(200).send(shelfie))
       .catch(error => console.log(error))
   },
